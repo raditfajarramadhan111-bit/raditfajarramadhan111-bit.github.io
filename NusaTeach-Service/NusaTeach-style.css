@@ -1,0 +1,123 @@
+body {
+    background-color: #F8FAFC;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+    color: #1E3A8A;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: bold;
+}
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 70%, rgba(248,250,252,1) 100%),
+    url("../Web.img/hardwere.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero-section p {
+    color: rgba(229, 231, 235, 0.85);
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    font-weight: bold;
+    margin-top: 0.2rem;
+    text-align: center;
+}
+.hero-section button, .cta-button {
+    background-color: #3B82F6;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: clamp(1rem, 2.5vw, 1.25rem);
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin: 0.5rem;
+    text-decoration: none;
+}
+.hero-section button:hover, .cta-button:hover {
+    background-color: #2563EB;
+    cursor: pointer;
+}
+.masalah, .solusi, .layanan, .alasan, .testimoni, .alur-Layanan {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.masalah h2, .solusi h2, .layanan h2, .alasan h2, .testimoni h2, .alur-Layanan h2, .contact-button h2 {
+    color: #1E3A8A;
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.masalah li, .solusi li, .layanan li, .alasan li, .alur-Layanan li {
+    color: #374151;
+    font-size: clamp(1rem, 3vw, 1.5rem);
+    max-width: 800px;
+    text-align: center;
+    line-height: 1.5;
+    text-align: left;
+}
+.masalah li::before {
+    content: "> ";
+    color: #1E3A8A; /* Warna simbol, sesuaikan jika perlu */
+}
+.masalah li {
+    list-style-type: none;
+}
+.solusi li::before {
+    content: "✓ ";
+    color: #1E3A8A; /* Warna simbol, sesuaikan jika perlu */
+}
+.solusi li {
+    list-style-type: none;
+}
+.layanan li::before {
+    content: "• ";
+    color: #1E3A8A; /* Warna simbol, sesuaikan jika perlu */
+}
+.layanan li {
+    list-style-type: none;
+}
+.alasan li::before {
+    content: "★ ";
+    color: #1E3A8A; /* Warna simbol, sesuaikan jika perlu */
+}
+.alasan li {
+    list-style-type: none;
+}
+.testimoni {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.testimoni-item {
+    background-color: #2563EB;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin: 1rem;
+    max-width: 600px;
+    text-align: center;
+}
+.contact-button {
+    height: 90vh;
+      background: linear-gradient(to top, rgba(0,0,0,.5) 0%, rgba(0,0,0,.5) 70%, rgba(248,250,252,1) 100%),
+    url("../Web.img/hardwere.jpg");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media query untuk perangkat mobile */
+@media (max-width: 768px) {
+    .testimoni-item {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+}
